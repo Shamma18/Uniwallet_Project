@@ -20,9 +20,9 @@ jobs:
             script: |
              cd ~/Uniwallet_Project
              git pull origin main
-             npm install
-             npm run build
-             pm2 restart uniwallet || pm2 start npm --name uniwallet -- start
+             sudo npm install
+             sudo npm run build
+             sudo pm2 restart uniwallet || pm2 start npm --name uniwallet -- start
  
 
         
